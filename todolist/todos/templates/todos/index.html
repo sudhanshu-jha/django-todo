@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'todos/style.css' %}">
+<div id="myDIV" class="header">
+    
+    <h1>Welcome! {{user}}</h1>
+    <h1>Listing of todos </h1>
+    <button class="btn success"><a href="/todos/add/">AddTodo</a></button>
+</div>
+</head>
+<table>
+      <tr>
+        <th>Serial No.</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Action</th>
+    </tr>
+        {% for todo in todos %}
+        <tr>
+            <td> <a href="/todos/details/{{todo.id}}"> {{todo.Serial}}</a></td>      
+            <td><a href="/todos/details/{{todo.id}}">{{todo.Title}} </a></td>
+            <td><a href="/todos/details/{{todo.id}}">{{todo.Description}} </a></td>
+            <td><a href="/todos/edit/{{todo.id}}/detail/">Edit</a> <a href="/todos/delete/{{todo.id}}/detail/">Delete</a> </td>
+            </tr>
+        {% endfor %}
+</table>
+
+
+
+  
+
+
+

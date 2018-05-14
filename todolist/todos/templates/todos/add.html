@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'todos/style.css' %}">
+
+<form action="{% url 'add' %}" method="post">
+    {% csrf_token %}
+      <h1>Add todo</h1>
+      <label for="Serial">Serial No.</label><br />
+      <input type="integer" name="Serial" id="Serial" />
+      <br>
+      <label for="Title">Title</label><br/>
+      <input type="text" name="Title" id="Title" />
+      <br>
+      <label for="text">Description</label><br />
+      <textarea name="Description" id="Description"></textarea>
+      <br><br>
+      <input type="submit" value="Add_Todo" />
+</form>
+<br>
+<a href="/todos/" class="previous">&laquo; Back to List</a>
+

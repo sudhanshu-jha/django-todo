@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'todos/style.css' %}">
+
+{% csrf_token %}
+
+<form action="" method="post">
+    {% csrf_token %}
+      <h1>Edit todo</h1>
+      <label for="Serial">Serial</label><br/>
+      <input type="integer" name="Serial" id="Serial" value="{{todos.Serial}}" />
+      <br>
+      <label for="Title">Title</label><br/>
+      <input type="text" name="Title" id="Title" value="{{todos.Title}}" />
+      <br>
+      <label for="text">Description</label><br />
+      <input type="text" name="Description" id="Description" value="{{todos.Description}}" />
+      <!-- <textarea name="Description" id="Description" value="{{todos.Description}}"></textarea> -->
+      <br><br>
+      <input type="submit" value="Edit Details" />
+</form>
+
+<a href="/todos/" class="previous">&laquo; Back to List</a>

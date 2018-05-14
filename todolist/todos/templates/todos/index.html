@@ -2,18 +2,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todos</title>
 
 {% load static %}
 <link rel="stylesheet" href="{% static 'todos/style.css' %}">
 <div id="myDIV" class="header">
-    
+
     <h1>Welcome! {{user}}</h1>
     <h1>Listing of todos </h1>
     <button class="btn success"><a href="/todos/add/">AddTodo</a></button>
 </div>
-</head>
+</head>   
 <table>
-      <tr>
+    <tr>
         <th>Serial No.</th>
         <th>Title</th>
         <th>Description</th>
@@ -29,7 +32,7 @@
         {% endfor %}    
 </table>
 
-
+</html>
 
   
 

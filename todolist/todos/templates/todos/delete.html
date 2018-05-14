@@ -6,8 +6,7 @@
 <form action="" method="post">
     {% csrf_token %}
       <h1>Delete todo</h1>
-      <h3>Are you sure you want to delete the todo {{todos.Title}}? All of the following related items will be deleted:</h3>
-
+      <h3>Are you sure you want to delete {{todos.Title}}? All of the following related items will be deleted:</h3>
       <label for="Serial">Serial</label><br/>
       <input type="integer" name="Serial" id="Serial" value="{{todos.Serial}}" />
       <br>
@@ -18,7 +17,7 @@
       <input type="text" name="Description" id="Description" value="{{todos.Description}}" />
       <!-- <textarea name="Description" id="Description" value="{{todos.Description}}"></textarea> -->
       <br><br>
-      <input type="submit" value="Delete_Todo" />
+      <input type="submit" onclick="alert('Are you sure you want to delete !')"  value="Delete_Todo" />
 </form>
 
 <a href="/todos/" class="previous">&laquo; Take me back to List</a>

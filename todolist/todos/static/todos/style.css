@@ -13,14 +13,7 @@ footer{
 }
 
 
-/* Clear floats after the header */
-/* .header:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
-h1{
+h1,h3{
     background-color: #bbb;
     color:#f44336;
     text-align: center;
@@ -44,13 +37,14 @@ h2{
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width:100% ;
 }
 
 th{
     border: 1px solid #dddddd;
     text-align: Center;
-    padding: 6px;
+    /* padding: 6px; */
+    padding: 8px 16px;
     background-color:#9e42f4;
 }
 
@@ -58,7 +52,7 @@ tr{
     border: 1px solid #dddddd;
     text-align: center;
     padding: 6px;
-    background-color: orange;
+    background-color: grey;
 }
 
 
@@ -83,6 +77,9 @@ form{
     text-align: center;
 }
 
+body{
+    background-color:#42f4f4;
+}
 
 
 

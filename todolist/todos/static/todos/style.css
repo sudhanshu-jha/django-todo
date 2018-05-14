@@ -49,14 +49,14 @@ table {
 
 th{
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: Center;
     padding: 6px;
     background-color:#9e42f4;
 }
 
 tr{
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 6px;
     background-color: orange;
 }

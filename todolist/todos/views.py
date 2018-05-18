@@ -38,19 +38,6 @@ def details(request, id):
     }
     return render(request, 'todos/details.html', context)
 
-
-# def edit(request):
-#     if(request.method == 'POST'):
-#         Serial= request.POST['Serial']
-#         Title = request.POST['Title']
-#         Description = request.POST['Description'] 
-#         todo = Todo(Serial=Serial,Title=Title, Description=Description)
-#         todo.save()
-#         return redirect('/todos')
-#     else:
-#         return render(request, 'todos/edit.html')
-
-
 def edit(request, pk):
 
     if (request.method=='GET'):
@@ -69,10 +56,8 @@ def edit(request, pk):
         todo = Todo.objects.get(id=pk)
         todo.Serial= Serial
         todo.Title = Title
-        todo.Description = Description        
-
+        todo.Description = Description
         todo.save()
-        # todo.delete()
         return redirect('/todos/')
         
 def delete(request, pk):

@@ -6,16 +6,17 @@ from .models import Todo
 
 class TodoAdmin(admin.ModelAdmin):
     # list_display = ('Serial', 'Title', 'Description')
-    search_fields = ['Title']
+    search_fields = ["Title"]
 
     # fields = ['Serial','Title','Description']
     fieldsets = [
-        ('Serial', {'fields': ['Serial']}),
+        ("Serial", {"fields": ["Serial"]}),
         # (None,  {'fields': ['Serial']}),
-        ('Title', {'fields': ['Title']}),
-        ('Description', {'fields': ['Description']}),
+        ("Title", {"fields": ["Title"]}),
+        ("Description", {"fields": ["Description"]}),
     ]
-    list_filter = ['Title']
-    
+    list_filter = ["Title"]
+
+
 # admin.site.register(Todo)
-admin.site.register(Todo,TodoAdmin)
+admin.site.register(Todo, TodoAdmin)

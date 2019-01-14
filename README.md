@@ -1,3 +1,6 @@
+# Django TODO
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d1f1f29c142445aa836df7c78048fe9e)](https://www.codacy.com/app/sudhanshu-jha/django-todo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sudhanshu-jha/django-todo&amp;utm_campaign=Badge_Grade)
+
 # Introduction
 
 - Todos is a simple Django app for making Todo List created in Django.
